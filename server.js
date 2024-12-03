@@ -7,7 +7,7 @@ const path = require('path');
 const { Readable } = require('stream'); // Import Readable from stream
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Create upload directories if they don't exist
 const originalDir = path.join(__dirname, 'uploads', 'original');

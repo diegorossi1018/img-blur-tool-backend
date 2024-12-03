@@ -2,7 +2,7 @@
 FROM node:22
 
 # Specify working directory
-WORKDIR /test_extension_server
+WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
