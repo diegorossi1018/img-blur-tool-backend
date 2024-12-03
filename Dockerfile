@@ -2,7 +2,7 @@
 FROM node:22
 
 # Specify working directory
-WORKDIR /app
+WORKDIR /test_extension_server
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose port 8000
-EXPOSE 5000
+EXPOSE 4000
 
 # Run the app
 CMD ["npm", "start"]
